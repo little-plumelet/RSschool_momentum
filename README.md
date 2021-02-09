@@ -1,7 +1,7 @@
 # RSschool_momentum
 This is task from RSschool (https://rs.school/js/)
 ## RSS Моментум
-#### my realisation ()
+#### my realisation (https://vigilant-mcclintock-2c4c79.netlify.app/)
 <img src="./assets/images/image.JPG" width=100% height=40%>
 
 Momentum - аналог одноимённого приложения интернет-магазина Chrome. Приложение показывает время и имя пользователя, его цель на текущий день. Фоновое изображение меняется в зависимости от времени суток. Для хранения данных приложение использует локальное хранилище - local storage. Автор - Brad Traversy.
