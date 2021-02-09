@@ -1,0 +1,165 @@
+* {
+  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  block-size: 100%;
+}
+
+.body-wrapper {
+  max-width: 1600px;
+  margin: 2rem auto;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+}
+
+body:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /*background-image: url('assets/images/overlay.png');*/
+  background: content-box radial-gradient(gray, black);
+  opacity: 0.25;
+  z-index: -100;
+}
+
+.time {
+  font-size: 8rem;
+  padding-top: 7rem;
+}
+
+.date {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h1 {
+  margin: 3rem 0;
+  min-width: 4rem;
+}
+
+h2 {
+  min-width: 2rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+.focus {
+  margin-bottom: 0.5rem;
+  opacity: unset;
+  border-bottom: 1px solid white;
+}
+
+.next-background {
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem 1.11rem;
+  margin-top: 1rem;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  background-color: transparent;
+  border: solid 1px white;
+  border-radius: 50%;
+  outline: none;
+  font-weight: bold;
+}
+.next-background img {
+  position: absolute;
+  max-width: 60px;
+  opacity: 0.65;
+  position: absolute;
+}
+.next-background:hover {
+  opacity: 1;
+  background-color: rgba(117, 190, 218, 0.5);
+}
+
+.quote-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+.quote {
+  padding-top: 7rem;
+  text-align: left;
+}
+
+/*button*/
+.next-quote {
+  display: flex;
+  max-width: 200px;
+  padding: 0.2rem 0.2rem;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  opacity: 0.85;
+  background-color: transparent;
+  border: solid 1px white;
+  border-radius: 50%;
+  outline: none;
+}
+.next-quote:hover {
+  opacity: 1;
+  background-color: rgba(117, 190, 218, 0.5);
+}
+
+
+.next-quote img {
+  max-width: 20px;
+}
+
+.weather-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.city {
+  font-size: 1.5rem;
+  min-width: 2rem;
+}
+
+.temperature-icon {
+  display: flex;
+  align-items: center;
+}
+.owf {
+  font-size: 3.5rem;
+  padding: 1rem 0 1rem 0.5rem;
+}
+
+
+
+@media (min-width: 700px) {
+  .time {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 320px) {
+  .time {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .time {
+    font-size: 3rem;
+  }
+}

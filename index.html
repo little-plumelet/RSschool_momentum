@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="owfont-regular.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <title>momentum</title>
+</head>
+<body>
+  <div class="body-wrapper">
+
+    <div class="weather-wrapper">
+      <div class="city" contenteditable="true"></div>
+      <div class="temperature-icon">
+        <div class="temperature"></div>
+        <i class="weather-icon owf"></i>
+      </div>
+      
+      <div class="weather-description"></div>
+      <div class="humidity"></div>
+      <div class="wind-speed"></div>
+    </div>
+
+    <time class="time"></time>
+    <date class = "date"></date>
+    <h1>
+      <span class="greeting"></span>
+      <span class="name" contenteditable="true"></span>
+    </h1>
+    <h2>Цель дня</h2>
+    <h2 class="focus" contenteditable="true"></h2>
+    <button class = "next-background">фон
+      <img src = "assets/images/reload.png" alt="Обновить фон">
+    </button>
+
+    <div class = "quote-wrapper">
+      <figure class="quote">
+        <blockquote>   
+        </blockquote>
+      </figure>
+      <button class = "next-quote">
+        <img src = "assets/images/reload.png" alt="Обновить цитату">
+      </button>
+    </div>
+    <div class="overlay"></div>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
